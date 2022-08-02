@@ -1,132 +1,97 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        //1
-        //  String name[]=new String[3];
-        // name[0]="Saleh";
-        // name[1]="Khalid";
-        //  name[2]="Majed";
+//1
+        //boolean prime= prime(12);
 
-        // for (int i=0;i<name.length;i++){
-        //   System.out.println(name[i]);
-        // }
+//if (prime){
+        //System.out.println("a prime");
+    //}
+
+//else {
+        //System.out.println("not a prime");
+//}
 
 
-        //________
         //2
-        // for(int i=0;i<=33;i++){
-        //      if (i%5==0){
-        //       continue;
-        //   }
-        //    System.out.print(i);
-        //
-        //}
-//---------------------------
+
+     //   System.out.println("the tax for 400 price is"+taxcal(10));
+
         //3
-        //    String name[] = new String[5];
-        //  name[0] = "Saleh";
-        // name[1] = "Khalid";
-        //    name[2] = "Majed";
-        //  name[3] = "NOrah";
-        //    name[4] = "Sarah";
-        //   for (int i = name.length - 1; i >= 0; i--) {
-        //       System.out.println(name[i]);
-        //   }
-        //___________________________________________________________________
-        //4
-        //   String name[] = new String[10];
-        //   name[0] = "Saleh";
-        //name[1] = "Khalid";
-        //name[2] = "Majed";
-        //name[3] = "NOrah";
-        //name[4] = "Sarah";
-        // name[5] = "Alla";
-        // name[6] = "Ahmed";
-        //name[7] = "Ameera";
-        // name [8] = "reem";
-        // name [9] = "deema";
 
 
-        //   for (int i=0;i<name.length;i++){
-        //      if (name[i].startsWith("A")){
-        //          continue;
+
+        boolean check = pand("dad");
+        System.out.println(check);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+//1
+   // public static boolean prime (int p) {
+     //   boolean prime = true;
+    //   if (p<=1){
+    //       prime = false;
+     //  }
+     //  else {
+     //      for (int i=2;i<=p/2;++i) {
+        //      if (p%i==0){
+           //       prime = false;
+         //     }
+           //}
+     //  }
+
+     //   return prime;
+  //  }
+
+   //2
+
+//   public static int taxcal(int price){
+
+    //   int t=0;
+     //     if (price>=100&&price<=500){
+      //        t= price*15/100;
+
+     //     }
+      //    else {
+       //      System.exit(0);
         //  }
-        //     System.out.println(name[i]);
-        //   }
+       //   return t;
+  // }
 
-
-        //____________________________
-        //5
-
-        //  String name[] = new String[5];
-        //   name[0] = "Saleh";
-        //  name[1] = "Khalid";
-        //    name[2] = "Majed";
-        //     name[3] = "NOrah";
-        //   name[4] = "Sarah";
-
-        //     printarray(name);
-
-
-        //6
-
-        // createarr(1,2,4);
-
-        //7
-        // name(" leenah" ," alkhuraiji");
-
-        //8
-
-       // System.out.println("the avg of 1+2+3+4 is"+avg(1,2,3,4));
-
-        // 9
-         int array []=new int[]{10,50,60,-100};
-         System.out.println("the max of array is"+maxarr(array));
-
-
+//3
+public static boolean pand(String name) {
+ String storerev="";
+    boolean  pand= false;
+    for (int i = name.length() - 1; i >= 0; i--) {
+        storerev= storerev + name.charAt(i);
     }
 
-    //5
-    // static public void printarray ( String []array){
-    // for (int i=0;i<array.length;i++){
-    //    System.out.println(array[i]);
-    // }
-//6
-    // static public int[] createarr(int a, int b, int c){
-    //    int num[]=new int[3];
-    //     num[0]=a;
-    //      num[1]=b;
-    //      num[2]=c;
-
-    //    return num;
-
-
-    //7
-    // public static void name(String Fname,String Lname) {
-
-    //    System.out.print("hello"+Fname+Lname);
-
-
-    //    }
-
-    //8
-   // public static int avg(int a, int b, int c, int d) {
-
-     //    return (a+b+c+d)/4;
-
-   // }
-
-    //9
-
-    public static int maxarr(int[]array){
-        int max=array[0];
-        for (int i=0;i< array.length;i++){
-            if (array[i]>max) {
-                max=array[i];
-
-            }
-
-        }
-        return max;
+    if (name.equals(storerev)) {
+        pand = true;
     }
+    return pand;
 }
+
+
+
+
+
+
+
+}
+
+
+
 
