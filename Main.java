@@ -13,7 +13,7 @@ public class Main {
         //System.out.println("not a prime");
 //}
 
-
+//hello
         //2
 
      //   System.out.println("the tax for 400 price is"+taxcal(10));
